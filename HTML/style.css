@@ -1,0 +1,29 @@
+h1 
+{
+    font-size: 30px;
+}
+h2
+{
+    font-size: 25px;
+}
+table 
+{
+    margin: auto;
+    background-color: antiquewhite;
+}
+.colorred
+{
+ color: red;
+}
+a
+{
+  color: green;
+}
+#colorblue
+{
+    color: blue;
+}
+.colororan
+{
+    color:orange;
+}
