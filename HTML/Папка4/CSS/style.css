@@ -40,7 +40,7 @@ body {
 }
 .ssylka1
 {
-    font-weight: 700px;
+    font-weight: 700%;
     font-size: 18px;
     margin-right: 25px;
    background-color: #3f2aff;
@@ -48,7 +48,7 @@ body {
 }
 .ssylka2
 {
-    font-weight: 700px;
+    font-weight: 700%;
     font-size: 18px;
     margin-left: 49px;
    background-color: #3f2aff;
@@ -59,10 +59,13 @@ body {
     font-size: 18px;
     color: #3f2aff;
 }
-.ikonka
+.i
 {
     padding-left: 30px;
-    background-image: url(/HTML/Папка4/img/download.png);
+    background-image: url("/HTML/Папка4/img/download.png");
+    background-position: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
 }
 .container
 {
@@ -128,8 +131,8 @@ ul
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: #3f2aff;
-    font-size: 30px;
-    color: #333;
+    font-size: 20px;
+    color: #3f2aff;
 
 }
 li
