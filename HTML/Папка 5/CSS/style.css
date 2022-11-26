@@ -217,3 +217,9 @@ height: 30px;
 left: 375px;
 top: 50px;
 }
+.modul
+{
+    background-image: url("../img/photo-copy\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
