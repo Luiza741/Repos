@@ -30,13 +30,26 @@ body {
     color: #fff;
     background-color: #070217;
 }
-.ssylki
+
+.logo {
+    margin-bottom: 50px ;
+}
+
+.href-block {
+    margin-bottom: 50px;
+}
+.href
 {
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 49px;
     padding-right: 49px;
+    margin-right: 25px;
+}
+
+.href:last-child {
+    margin-right: 0;
 }
 .container
 {
@@ -88,4 +101,8 @@ figure
     margin-bottom: 40px;
     width: 872px;
     font-size: 0px;
+}
+.img1
+{
+    margin-bottom: 40px;
 }

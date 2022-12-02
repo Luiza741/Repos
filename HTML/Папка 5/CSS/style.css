@@ -35,11 +35,27 @@ body {
     color: #fff;
     background-color: #070217;
 }
-.ssylki
-{
+.logo {
+    margin-bottom: 50px ;
+}
+
+.href-block {
     margin-bottom: 50px;
 }
-.ssylka1
+.href
+{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 49px;
+    padding-right: 49px;
+    margin-right: 25px;
+}
+
+.href:last-child {
+    margin-right: 0;
+}
+.href1
 {
     display: inline-block;
     padding: 24px 49px;
@@ -49,7 +65,7 @@ body {
     background-color: #3f2aff;
 
 }
-.ssylka2
+.href2
 {
     display: inline-block;
     padding: 24px 49px;
@@ -57,14 +73,11 @@ body {
     font-size: 18px;
     background-color: #3f2aff;
 }
-.ckachat
+.i
 {
     font-weight: 700px;
     font-size: 18px;
     color: #3f2aff;
-}
-.i
-{
     padding-left: 30px;
     background-image: url("../img/download.png");
     background-position: left center;
@@ -106,6 +119,10 @@ p
     background-image: url("../img/decorate-2.png");
     background-repeat: no-repeat;
     background-position: right;
+}
+figure
+{
+    margin: 0px;
 }
 figcaption
 {
@@ -216,4 +233,17 @@ width: 137px;
 height: 30px;
 left: 375px;
 top: 50px;
+}
+.h11
+{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 69px;
+color: #3F2AFF;
+}
+.img1
+{
+    margin-bottom: 40px;
 }
