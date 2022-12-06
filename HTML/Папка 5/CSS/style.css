@@ -247,3 +247,7 @@ color: #3F2AFF;
 {
     margin-bottom: 40px;
 }
+li
+{
+    list-style-type: none;
+}
