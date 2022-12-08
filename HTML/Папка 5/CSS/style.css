@@ -151,10 +151,13 @@ h1
 }
 h2
 {
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 46px;
-    color: #333;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+color: #3F2AFF;
+margin-bottom: 10px;
 }
 h3
 {
@@ -250,4 +253,26 @@ color: #3F2AFF;
 li
 {
     list-style-type: none;
+}
+.modul
+{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 165%;
+color: #333333;
+}
+.pakaz
+{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #3F2AFF;
+flex: none;
+order: 0;
+flex-grow: 0;
 }
