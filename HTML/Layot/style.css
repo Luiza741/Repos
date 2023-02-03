@@ -3,108 +3,13 @@
     margin: auto;
     width: 1920px;
 }
-.modu
+body 
 {
-    display: inline-block;
-    margin: 0px;
-    padding-inline-start: 0px;
-}
-.mod_li
-{
-    display: inline-block;
-    background-position: top center;
-    background-color: #ffffff;
-    vertical-align: top;
-    margin-bottom: 20px;
-    position: relative;
-    
     font-family: 'Muller';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: #666666;
-}
-
-.cont_sun
-{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    align-items: center;
-}
-.telephone
-{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px; 
-    color: #666666;
-    margin-right: auto;
-
-}
-.lich_kabinet
-{
-    padding-left: 25px;
-    background-image: url("../Layot/img/Стрелка.png");
-    background-position: left center;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-
-  margin-left: 541px;
-    font-family: 'Muller';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: #CC9933;
-}
-.head2
-{
-    margin: 0 auto;
-    margin-top: 114px;
-    position: absolute;
-margin-left: 375px;
-background: #FFFFFF;
-border-radius: 15px;
-width: 1170px;
-max-width: 100%;
-}
-.li1
-{
-    display: inline-block;
-  margin-top: 27px;
-  margin-bottom: 27px;
-  padding-left: 45px;
-}
-.but
-{
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 13px 20px;
-border: 1px solid #CC9933;
-border-radius: 10px;
-
-font-family: 'Muller';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-
-color: #CC9933;
-
-}
-.num1
-{
-margin-left: 114px;
-margin-top: 14px;
-margin-bottom: 14px;
-}
-.num2
-{
-    margin-left: 60px;
-    margin-top: 14px;
-margin-bottom: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+    font-style: normal;
 }
 
 .container
@@ -127,4 +32,79 @@ margin-bottom: 14px;
     display: flex;
     align-items: center;
     margin-right: 40px;
+}
+.telephone
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px; 
+    color: #666666;
+    margin-right: 570px;
+
+}
+.lich_kabinet
+{
+    padding-left: 27px;
+    background-image: url("../Layot/img/Стрелка.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    font-weight: 400;
+    font-size: 16px;
+    color: #CC9933;
+}
+.cont_down
+{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0px 45px;
+}
+.cont_li_header
+{
+    margin: 0px;
+    list-style-type: none;
+    margin-right: auto;
+    padding: 0px;
+}
+.li_head
+{
+
+    display: inline-block;
+    background-position: top center;
+    background-color: #ffffff;
+    vertical-align: top;
+    position: relative;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #666666;
+margin-right: 45px;
+padding: 27px 0px;
+}
+.but
+{
+padding: 13px 20px;
+border: 1px solid #CC9933;
+border-radius: 10px;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color: #CC9933;
+}
+.num1
+{
+    margin-right: 40px;
+}
+.cont_spec
+{
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+color: #333333;
+margin: 0;
+padding-bottom: 20px;
+padding-left: 40px;
 }

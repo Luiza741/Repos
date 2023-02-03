@@ -346,15 +346,9 @@
 </body>
 
 </html>
-@font-face {font-family: 'Muller';src: local('Muller-Regular'),url('fonts/MullerRegular.woff2') format('woff2'),url('fonts/MullerRegular.woff') format('woff');font-display: swap;font-weight: 400;font-style: normal;}/* Подключил шрифты */
 
-@font-face {font-family: 'Muller';src: local('Muller-Medium'),url('fonts/MullerMedium.woff2') format('woff2'),url('fonts/MullerMedium.woff') format('woff');font-display: swap;font-weight: 500;font-style: normal;}/* Подключил шрифты */
 
-@font-face {font-family: 'Muller';src: local('Muller-Bold'),url('fonts/MullerBold.woff2') format('woff2'),url('fonts/MullerBold.woff') format('woff');font-display: swap;font-weight: 700;font-style: normal;}/* Подключил шрифты */
 html {box-sizing: border-box;}
-*,
-*::before,
-*::after {box-sizing: inherit;}
 .list-reset {margin: 0;padding: 0;list-style-type: none;}/* Сбросил список */
 .button-reset {padding: 13px 20px;border: 1px solid #CC9933;border-radius: 10px;background-color: transparent;cursor: pointer;color: #CC9933;font-size: 16px;font-weight: 400;line-height: 16px;}/* кнопки */
 .header-nav-btn {margin-right: 40px;}
