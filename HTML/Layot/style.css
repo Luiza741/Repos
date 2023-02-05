@@ -1,10 +1,9 @@
-.container_mod
-{
+.container_mod {
     margin: auto;
     width: 1920px;
 }
-body 
-{
+
+body {
     font-family: 'Muller';
     margin: 0;
     padding: 0;
@@ -12,8 +11,7 @@ body
     font-style: normal;
 }
 
-.container
-{
+.container {
     width: 1170px;
     margin: auto;
     padding: 35px 0;
@@ -21,29 +19,33 @@ body
     height: 5677px;
     background: #F1F1F1;
 }
-.cont_logo
+
+a 
 {
+    text-decoration: none;
+}
+.cont_logo {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
-.logo
-{
+
+.logo {
     display: flex;
     align-items: center;
     margin-right: 40px;
 }
-.telephone
-{
+
+.telephone {
     font-weight: 500;
     font-size: 20px;
-    line-height: 20px; 
+    line-height: 20px;
     color: #666666;
     margin-right: 570px;
 
 }
-.lich_kabinet
-{
+
+.lich_kabinet {
     padding-left: 27px;
     background-image: url("../Layot/img/Стрелка.png");
     background-position: left;
@@ -52,59 +54,119 @@ body
     font-size: 16px;
     color: #CC9933;
 }
-.cont_down
-{
+
+.cont_down {
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 0px 45px;
 }
-.cont_li_header
-{
+
+.cont_li_header {
     margin: 0px;
     list-style-type: none;
     margin-right: auto;
     padding: 0px;
+
 }
-.li_head
-{
+
+.li_head {
 
     display: inline-block;
     background-position: top center;
     background-color: #ffffff;
     vertical-align: top;
     position: relative;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: #666666;
-margin-right: 45px;
-padding: 27px 0px;
+    margin-right: 45px;
+    padding: 27px 0px;
 }
-.but
-{
-padding: 13px 20px;
-border: 1px solid #CC9933;
-border-radius: 10px;
 
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-
-color: #CC9933;
+.hr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
 }
-.num1
-{
+
+.but {
+    padding: 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #CC9933;
+}
+
+.num1 {
     margin-right: 40px;
 }
-.cont_spec
+
+.cont_spec {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.spec_cont {
+display: flex;
+}
+
+.spec_zag {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+    width: 420px;
+    margin-bottom: 15px;
+}
+.spec{
+    display: flex;
+    flex-direction: column;
+}
+.spec_mald
+{
+    display: flex;
+    height: 258px;
+    max-width: 573px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    padding: 40px 45px;
+
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+    background-image: url("../Layot/img/pict1.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.spec_price
 {
 font-weight: 400;
-font-size: 40px;
-line-height: 40px;
-color: #333333;
-margin: 0;
-padding-bottom: 20px;
-padding-left: 40px;
+font-size: 20px;
+line-height: 20px;
+color: #FFFFFF;
+opacity: 0.8;
+margin-bottom: 47px;
+}
+.spec_podrobnee
+{
+width: 102px;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #F0BF5F;
+background-image: url("../Layot/img/Rectangle\ 2.png");
+background-repeat: no-repeat;
+background-position: right;
+
 }
