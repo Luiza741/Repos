@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form class="forma1" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <input class="forma1_input form_name" type="text" name="Имя" maxlength="30" required placeholder="Введите имя">
+        <div class="forma1_input">
+        <label class="label_gender"><input class="radio_gender" type="radio" name="Gender" value="Мужской" >Мужской</label>
+        <label><input type="radio" checked name="Gender" value="Женский">Женский</label>
+        </div>
+        <select name="Район" id="">
+            <option selected value="Район не выбран" disabled>Выберите район</option>
+            <option value="Максимус на Баруди">Максимус на Баруди</option>
+            <option value="Максимус на Минской ">Максимус на Минской</option>
+        </select>
+        <input class="forma1_input" type="date" name="Birthday" value="2023-02-16">
+        <input class="forma1_input" type="date" name="visit-date" value="2023-02-16" min="2023-01-16" max="">
+        <input class="forma1_input" type="number" name="Ochenka" min="1" max="10" placeholder="Ваша оценка">
+        <textarea name="Otzuv" maxlength="255" placeholder="Ваш отзыв"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

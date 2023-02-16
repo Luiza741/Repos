@@ -1,0 +1,32 @@
+.forma1
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: lightcyan;
+    border-radius: 15px;
+}
+.forma1_input
+{
+    margin-bottom: 20px;
+    width: 200px;
+}
+.form_name
+{
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+}
+.label_gender
+{
+    color: blue;
+}
+.ragio_gender
+{
+    border: 0px;
+}
