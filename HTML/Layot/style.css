@@ -16,7 +16,6 @@ body {
     margin: auto;
     padding: 35px 0;
     max-width: 100%;
-    height: 5677px;
     background: #F1F1F1;
 }
 
@@ -128,17 +127,17 @@ a {
 
 .spec_block {
     display: flex;
-    height: 258px;
+    min-height: 258px;
     max-width: 573px;
     margin-right: 24px;
     margin-bottom: 24px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .mald {
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
-    background-image: url("../Layot/img/pict1.jpg");
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../Layot/img/pict1.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
@@ -146,12 +145,15 @@ a {
 }
 
 .spec_price {
+    display: flex;
+    align-self: start;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.8;
     margin-bottom: 47px;
+    padding: 0 45px;
 }
 
 .spec_podrobnee {
@@ -166,8 +168,7 @@ a {
 }
 
 .krit {
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
-    background-image: url("../Layot/img/pich2.jpg");
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../Layot/img/pich2.jpg");
     border-radius: 15px;
     background-repeat: no-repeat;
     object-fit: cover;
