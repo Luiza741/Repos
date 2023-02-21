@@ -64,6 +64,7 @@ a {
 
 .cont_li_header {
     margin: 0px;
+    padding: 0;
     list-style-type: none;
     margin-right: auto;
     padding: 0px;
@@ -137,7 +138,6 @@ a {
 .mald {
     background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../Layot/img/pict1.jpg");
     background-repeat: no-repeat;
-
     background-position: 0%;
     border-radius: 15px;
 }
@@ -220,4 +220,66 @@ a {
     line-height: 200%;
     color: #000000;
     max-width: 888px;
+}
+.ul_yslugi {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.li_yslugi {
+    min-height: 330px;
+    max-width: 573px;
+    padding: 35px 45px;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.Exkluz {
+    background-image: url("../Layot/img/Эксклюзивное.png");
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+
+.Arenda {
+    background-image: url("../Layot/img/Аренда.png");
+    margin-bottom: 24px;
+}
+
+.Sayna {
+    background-image: url("../Layot/img/Сауны.png");
+    margin-right: 24px;
+}
+
+.Stoynka {
+    background-image: url("../Layot/img/Стоянки.png");
+}
+.yslugi_block {
+    display: flex;
+        width: 100%;
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+}
+.yslugi_zag {
+    width: 402px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.text_yslugi {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+    padding-right: 16px;
+    background-image: url("../Layot/img/Rectangle\ 3.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
