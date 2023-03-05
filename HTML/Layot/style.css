@@ -264,16 +264,21 @@ a {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        width: 573px;
+min-height: 330px;
 }
-.yslugi_zag {
+.text_yslugi {
     width: 402px;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
     color: #000000;
+    margin-left: 45px;
+    margin-top: 0px;
+    
 }
 
-.text_yslugi {
+.yslugi_zag {
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
@@ -282,4 +287,7 @@ a {
     background-image: url("../Layot/img/Rectangle\ 3.png");
     background-repeat: no-repeat;
     background-position: right;
+    margin-top: 26px;
+    margin-left: 45px;
+    margin-bottom: 0px;
 }
