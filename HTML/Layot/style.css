@@ -123,6 +123,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 50%;
+    min-height: 540px;
 }
 
 .spec_block {
@@ -150,13 +151,21 @@ a {
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.8;
-    margin-left: 45px;
+}
+.spec_price2 {
+    display: flex;
+    align-self: start;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 47px;
 }
 
 .spec_podrobnee {
     display: flex;
     align-self: flex-start;
-    margin-left: 45px;
     margin-bottom: 40px;
     width: 102px;
     font-weight: 400;
@@ -193,6 +202,7 @@ a {
     line-height: 60px;
     width: 299px;
     color: #FFFFFF;
+    margin-top: 212px;
     margin-bottom: 15px;
 }
 
@@ -275,6 +285,7 @@ min-height: 330px;
     color: #000000;
     margin-left: 45px;
     margin-top: 0px;
+    margin-bottom: 35px;
     
 }
 
@@ -290,4 +301,70 @@ min-height: 330px;
     margin-top: 26px;
     margin-left: 45px;
     margin-bottom: 0px;
+}
+
+.preim_block
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.li_preim
+{
+    width: 276px;
+    min-height: 276px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-position: top 40px left 45px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+
+}
+.preim_text
+{
+    font-weight: 400;
+font-size: 16px;
+line-height: 200%;
+padding: 116px 42px 32px 45px;
+}
+.pich1 {
+    background-image: url("../Layot/img/bathtub.png");
+}
+
+.pich2 {
+    background-image: url("../Layot/img/hanger.png");
+}
+
+.pich3 {
+    background-image: url("../Layot/img/heating.png");
+}
+
+.pich4 {
+    background-image: url("../Layot/img/hotel-key.png");
+}
+
+.pich5 {
+    background-image: url("../Layot/img/parking.png");
+}
+
+.pich6 {
+    background-image: url("../Layot/img/reception.png");
+}
+
+.pich7 {
+    background-image: url("../Layot/img/security-box.png");
+}
+
+.pich8 {
+    background-image: url("../Layot/img/swimming-pool.png");
 }
