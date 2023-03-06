@@ -310,13 +310,12 @@ min-height: 330px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
 
 }
 .li_preim
 {
-    width: 276px;
+    max-width: 276px;
     min-height: 276px;
     border-radius: 15px;
     background-color: #FFFFFF;
@@ -326,7 +325,6 @@ font-weight: 400;
     color: #000000;
     background-repeat: no-repeat;
     background-position: top 40px left 45px;
-    margin-right: 22px;
     margin-bottom: 22px;
 
 }
@@ -339,14 +337,17 @@ padding: 116px 42px 32px 45px;
 }
 .pich1 {
     background-image: url("../Layot/img/bathtub.png");
+    margin-right: 22px;
 }
 
 .pich2 {
     background-image: url("../Layot/img/hanger.png");
+    margin-right: 22px;
 }
 
 .pich3 {
     background-image: url("../Layot/img/heating.png");
+    margin-right: 22px;
 }
 
 .pich4 {
@@ -355,14 +356,17 @@ padding: 116px 42px 32px 45px;
 
 .pich5 {
     background-image: url("../Layot/img/parking.png");
+    margin-right: 22px;
 }
 
 .pich6 {
     background-image: url("../Layot/img/reception.png");
+    margin-right: 22px;
 }
 
 .pich7 {
     background-image: url("../Layot/img/security-box.png");
+    margin-right: 22px;
 }
 
 .pich8 {
