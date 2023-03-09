@@ -421,3 +421,22 @@ body {font-family: 'Muller', sans-serif;margin: 0;padding: 0;background-color: #
 .hotel-text-margin-1 {margin-bottom: 16px;}
 .hotel-text-margin-2 {margin-bottom: 20px;}
 .hotels-item-all {font-weight: 500;font-size: 20px;line-height: 40px;color: #FFFFFF;padding-right: 15px;background-image: url(../img/logo-hotels-more.png);background-position: right;background-repeat: no-repeat;margin-bottom: 27px;}
+
+services title about
+color: var(color)
+stroke 
+position: absolute;
+right 0
+top 1.5
+transition right0.4s linear
+services titela hover svg
+right-10
+social logo:focus-visible
+{
+  outline:none;
+}
+.social logo:focus-visible
+{
+  fill: var(--default-color);
+}
+bac var(--default-color1)

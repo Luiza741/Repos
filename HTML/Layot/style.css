@@ -22,6 +22,10 @@ body {
 a {
     text-decoration: none;
 }
+a:hover
+{
+ color: #FFFFFF;
+}
 
 .cont_logo {
     display: flex;
@@ -116,7 +120,7 @@ background-image: url("../Layot/img/Vector3.svg");
     color: #CC9933;
     
 }
-.but:focus
+.but:focus:not(focus-visible)
 {
     background-color: #CC9933;
     color: #FFFFFF;
@@ -331,6 +335,11 @@ min-height: 330px;
     margin-left: 45px;
     margin-bottom: 0px;
 }
+.yslugi_zag:hover
+{
+    color: #F0BF5F
+    
+}
 
 .ul_block
 {
@@ -358,7 +367,7 @@ font-weight: 400;
 
 }
 .preim_text
-{
+{ 
     font-weight: 400;
 font-size: 16px;
 line-height: 200%;
@@ -411,11 +420,12 @@ padding: 116px 42px 32px 45px;
 
 .li_razm
 {
-    width: 374px;
+    /*width: 374px;*/
     min-height: 440px;
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     border-radius: 15px;
+    width: calc((100% - (var(--gap)*1))/2);
 }
 .li_razm:not(:nth-child(3n)) {
     margin-right: 24px;
