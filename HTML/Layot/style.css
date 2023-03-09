@@ -61,6 +61,7 @@ color: #F0BF5F;
 {
 color: #F0BF5F;
 background-image: url("../Layot/img/Vector.svg");
+
 }
 .lich_kabinet:active
 {
@@ -506,4 +507,29 @@ border-radius: 15px;
 }
 .forma {
 padding: 28px 32px;
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.kontacts
+{
+min-height: 618px;
+background: #FFFFFF;
+border-radius: 15px;
+}
+.podpisi
+{
+    font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color: #000000;
+}
+.strelka
+{
+    
+}
+.celekt
+{
+
 }
