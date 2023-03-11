@@ -254,7 +254,6 @@ hr:active
 {
     color: #F0BF5F;
     background-image: url("../Layot/img/Rectangle\ 2.png");
-    transition: 10px right 0.4s linear;
 }
 .spec_podrobnee:active
 {
