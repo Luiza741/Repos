@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     padding: 35px 0;
     max-width: 100%;
@@ -615,8 +615,48 @@ select{
         border:0px;
         outline:0px;
  }
+.kontact_block
+{
 
+}
+.ul_kontact
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.li_kontact
+{
+ display: flex;
 
+}
+.li_kontact_block
+{
+    flex-direction: column;
+    max-width: 375px;
+    min-height: 528px;
+}
+.kontact_zag
+{
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+color: #000000;
+}
+.kontact_text
+{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #000000;
+}
+.kontact_phone
+{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #CC9933;
+}
  .container_last
  {
     width: 1170px;
