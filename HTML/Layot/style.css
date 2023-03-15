@@ -325,10 +325,6 @@ hr:active
     padding: 35px 45px;
     background-repeat: no-repeat;
     object-fit: cover;
-    min-height: 330px;
-    max-width: 573px;
-    padding: 35px 45px;
-    background-repeat: no-repeat;
     background-position: top;
     border-radius: 15px;
     background-color: #FFFFFF;
@@ -615,57 +611,70 @@ select{
         border:0px;
         outline:0px;
  }
-.kontact_block
+.kontact
 {
     display: flex;
     width: 1170px;
 min-height: 618px;
 background: #FFFFFF;
 border-radius: 15px;
-background-image: url("../Layot/img/Контакты.png");
-background-position: right;
-background-repeat: no-repeat;
-padding-top: 45px;
 }
-.ul_kontact
+.kontact_block
 {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
     max-width: 375px;
     min-height: 528px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 45px;
+    margin-right: 52px;
+}
+.kontact_block2
+{
+ margin-top: 45px;   
 }
 .li_kontact
 {
- display: flex;
- margin-bottom: 25px;
- margin-left: 45px;
+    display: flex;
+    flex-direction: row;
 }
 .li_kontact:last-child
 {
     margin-bottom: 0px;
 }
+.kont1
+{
+    margin-right: 83px;
+}
+.kont2
+{
+    margin-right: 47px;
+}
+.kont3
+{
+    margin-right: 93px;
+}
+.kont4
+{
+    margin-right: 74px;
+}
 .li_kontact_block
 {
-
-}
-.li_kontact_block2
-{
-background-position: right;
-}
-.kontact_zag
-{
-font-weight: 700;
+    height: 20px;
+    font-weight: 700;
 font-size: 20px;
 line-height: 20px;
 color: #000000;
 }
-.kontact_text
+.li_kontact_block2
 {
-font-weight: 400;
+    font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 color: #000000;
+    margin-bottom: 23px;
+
 }
 .kontact_phone
 {
@@ -690,13 +699,20 @@ color: #999999;
 }
 .kontact_pich
 {
-    
+    background-image: url("../Layot/img/Rectangle\ 21.png");
+    width: 375px;
+height: 1px;
+background: #E9E9E9;
+margin-bottom: 25px;
+}
+.kontact_pich:last-child
+{
+    margin-bottom: 0px;
 }
 .but_kontact
 {
-    margin-left: 74.5px;
-    margin-bottom: 72px;
     padding: 25px 30px;
+    margin-top: 25px
 }
 
 
@@ -709,4 +725,61 @@ color: #999999;
     background: #333333;
     border-radius: 15px;
     max-width: 100%;
+ }
+ .last_block1
+ {
+    background-color: lightblue;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-bottom: 37px;
+    max-width: 302px;
+min-height: 60px;
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+color: #FFFFFF;
+ }
+ .last_block2
+ {
+    background-color: lightcoral;
+    max-width: 302px;
+min-height: 90px;
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+color: #FFFFFF;
+margin-left: 45px;
+margin-bottom: 40px;
+ }
+ .last_block3
+ {
+    background-color: lightcyan;
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #CC9933;
+margin-left: 45px;
+margin-bottom: 45px;
+width: 237px;
+height: 24px;
+ }
+ .last_block4
+ {
+    background-color: lightgoldenrodyellow;
+ }
+ .last_block5
+ {
+    background-color: lightgreen;
+ }
+ .last_block6
+ {
+    background-color: lightpink;
+ }
+ .last_block7
+ {
+    background-color: lightsalmon;
+ }
+ .last_block8
+ {
+    background-color: lightsteelblue;
  }
