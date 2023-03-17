@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Muller";
-    src: url("MullerRegular.woff2");
+    src: url("MullerRegular.woff2"), url("../Layot/MullerRegular.woff");
    }
 .container_mod {
     margin: auto;
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Muller', serif;
+    font-family: 'Muller';
     margin: 0;
     padding: 0;
     background-color: #F1F1F1;
@@ -171,7 +171,7 @@ background-image: url("../Layot/img/Vector3.svg");
 .spec_predl {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     
 }
 
@@ -180,8 +180,8 @@ background-image: url("../Layot/img/Vector3.svg");
     font-size: 40px;
     line-height: 40px;
     color: #FFFFFF;
-    width: 420px;
-    
+    max-width: 420px;
+    margin-bottom: 15px;
 }
 
 .spec_predl_block {
@@ -191,17 +191,16 @@ background-image: url("../Layot/img/Vector3.svg");
     min-height: 540px;
 }
 
-.spec_block {
+.article_spec_block {
     display: flex;
-    margin-right: 24px;
     margin-bottom: 24px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     min-height: 258px;
     max-width: 573px;
-    
+    padding-left: 45px;
 }
-.spec_block:last-child
+.article_spec_block:last-child
 {
     margin-bottom: 0px;
 }
@@ -220,6 +219,7 @@ background-image: url("../Layot/img/Vector3.svg");
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.8;
+    margin-bottom: 47px;
 }
 .spec_price2 {
     display: flex;
@@ -235,21 +235,22 @@ background-image: url("../Layot/img/Vector3.svg");
 .spec_podrobnee {
     display: flex;
     align-self: flex-start;
-    margin-bottom: 40px;
+
     width: 102px;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #F0BF5F;
+    stroke: #F0BF5F;
     transition: right 0.4s linear;
 }
 .spec_podrobnee:focus
 {
     color: #F0BF5F;
 }
-.podr_strel:hover
-{
-    transform: translateX(10px);
+.podr_strel:hover svg{
+    stroke: #CC9933;
+    transform: translateX(0.8em);
 }
 .spec_podrobnee:active
 {
@@ -263,24 +264,23 @@ background-image: url("../Layot/img/Vector3.svg");
     background-position: center;
 }
 
-.spec_block2 {
+.article_spec_block2 {
     display: flex;
     flex-direction: column;
     max-width: 573px;
     min-height: 540px;
-    margin-bottom: 24px;
-    padding: 0px 45px;
-    justify-content: center;
+    padding-left: 45px;
+    justify-content: flex-end;
     align-items: flex-start;
+    margin-left: 24px;
 }
 
 .spec_zag2 {
     font-weight: 700;
     font-size: 60px;
     line-height: 60px;
-    width: 299px;
+    max-width: 299px;
     color: #FFFFFF;
-    margin-top: 212px;
     margin-bottom: 15px;
 }
 
@@ -293,10 +293,10 @@ background-image: url("../Layot/img/Vector3.svg");
 }
 
 .zag {
-    margin: 0;
+    margin: 0px;
     font-size: 40px;
     line-height: 40px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     color: #333333;
     padding-left: 40px;
@@ -313,20 +313,20 @@ background-image: url("../Layot/img/Vector3.svg");
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 .li_yslugi {
     width: 49%;
     min-height: 330px;
     max-width: 573px;
-    padding: 35px 45px;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: top;
     border-radius: 15px;
     background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    
 }
 .Exkluz {
     background-image: url("../Layot/img/Эксклюзивное.png");
@@ -374,29 +374,37 @@ min-height: 330px;
     font-size: 20px;
     line-height: 200%;
     color: #CC9933;
+    stroke: #CC9933;
     padding-right: 16px;
-    background-image: url("../Layot/img/Rectangle\ 3.png");
-    background-repeat: no-repeat;
-    background-position: right;
     margin-top: 26px;
     margin-left: 45px;
     margin-bottom: 0px;
+    transition: right 1s linear;
     }
 .yslugi_zag:focus
 {
     color: #CC9933;
 }
+.yslugi_zag:focus svg
+{
+    stroke: #CC9933;
+    transform: translateX(0.8em);
+}
 .yslugi_zag:hover
 {
     color: #F0BF5F;
-    background-image: url("../Layot/img/Rectangle\ 2.svg");
+}
+.yslugi_zag:hover svg
+{
+    stroke: #F0BF5F;
+    transform: translateX(0.8em);
 }
 .yslugi_zag:active
 {
  color: #A47312;
 }
 
-.ul_block
+.ul_preim_block
 {
     margin: 0;
     padding: 0;
@@ -564,48 +572,73 @@ margin-bottom: 26px;
     background-repeat: no-repeat;
     margin-bottom: 27px;
 }
+.container_blog
+{
+    width: 1170px;
+    margin: auto;
+    padding: 35px 0;
+    max-width: 100%;
+    background: #E9E9E9;
+border-radius: 15px;
+}
 .xochy_tyr_block
 {
-    background: #FFFFFF;
-border-radius: 15px;
+    margin-left: 45px;
+    max-width: 1080px;
+    min-height: 106px;
 }
 .forma {
-padding: 28px 32px;
-display: flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-.kontacts
-{
-min-height: 618px;
-background: #FFFFFF;
+padding: 28px 32px;
+background-color: blue;
 border-radius: 15px;
 }
-.podpisi
+.forma_zag_text
+{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+color: #000000;
+background-color: aqua;
+}
+.select_block
 {
     font-weight: 400;
 font-size: 16px;
 line-height: 16px;
-
 color: #000000;
-}
-.strelka
-{
-    
-}
-.celekt
-{
-
 }
 select{
     border:0px;
     outline:0px;
-
+    appearance: none;
+  overflow: hidden;
+  background: url('../Layot/img/Черная_стрелка.png');
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+ .forma_block
+ {
+    position: relative;
+    background-color: blueviolet;
+min-height: 43px;
+margin-right: 41px;
+ }
+ .label_select
+ {
+background-color: crimson;
  }
  input
  {
         border:0px;
         outline:0px;
+ }
+ .label_date
+ {
+
  }
 .kontact
 {
@@ -621,14 +654,11 @@ border-radius: 15px;
     flex-direction: column;
     max-width: 375px;
     min-height: 528px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    margin-left: 45px;
-    margin-right: 52px;
+    padding: 45px 45px 52px 45px;
 }
 .kontact_block2
 {
- margin-top: 45px;   
+ margin-top: 45px; 
 }
 .li_kontact
 {
@@ -726,8 +756,8 @@ margin-bottom: 25px;
  }
  .last_block1
  {
-    margin-left: 45px;
-    margin-top: 10px;
+    padding: 0px 45px;
+    max-width: 302px;
 min-height: 60px;
 font-weight: 400;
 font-size: 16px;
@@ -743,8 +773,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 190%;
 color: #FFFFFF;
-margin-left: 45px;
-margin-bottom: 40px;
+padding: 0px 45px;
  }
  .last_block3
  {
@@ -752,9 +781,9 @@ margin-bottom: 40px;
 font-size: 16px;
 line-height: 150%;
 color: #CC9933;
-margin-left: 45px;
-width: 237px;
-height: 24px;
+padding: 0px 45px;
+max-width: 237px;
+min-height: 24px;
  }
  .last_block4
  {
@@ -803,7 +832,7 @@ top: 5757px;
  {
     position: absolute;
     left: 800px;
-top: 5680px;
+top: 5655px;
     
  }
  .iconki
