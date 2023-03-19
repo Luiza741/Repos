@@ -235,21 +235,28 @@ background-image: url("../Layot/img/Vector3.svg");
 .spec_podrobnee {
     display: flex;
     align-self: flex-start;
-
-    width: 102px;
+    max-width: 102px;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #F0BF5F;
     stroke: #F0BF5F;
-    transition: right 0.4s linear;
 }
-.spec_podrobnee:focus
+.podr
 {
-    color: #F0BF5F;
+margin-bottom: 47px;
 }
-.podr_strel:hover svg{
-    stroke: #CC9933;
+.podrobnee_svg
+{
+    transition: 0.3s ease;
+}
+.spec_podrobnee:focus svg
+{
+    stroke: #F0BF5F;
+    transform: translateX(0.8em);
+}
+.spec_podrobnee:hover svg{
+    stroke: #F0BF5F;
     transform: translateX(0.8em);
 }
 .spec_podrobnee:active
@@ -379,8 +386,11 @@ min-height: 330px;
     margin-top: 26px;
     margin-left: 45px;
     margin-bottom: 0px;
-    transition: right 1s linear;
     }
+.yslugi_zag_svg
+{
+    transition: 0.3s ease;
+}
 .yslugi_zag:focus
 {
     color: #CC9933;
@@ -419,14 +429,13 @@ min-height: 330px;
     max-width: 276px;
     min-height: 276px;
     border-radius: 15px;
+    font-weight: 400;
     background-color: #FFFFFF;
-font-weight: 400;
     font-size: 16px;
     line-height: 200%;
     color: #000000;
     background-repeat: no-repeat;
     background-position: top 40px left 45px;
-    margin-bottom: 22px;
 
 }
 .preim_text
@@ -480,7 +489,15 @@ padding: 116px 42px 32px 45px;
 .li_preim:not(:nth-child(1n+5)) {
     margin-bottom: 22px;
 }
-
+.ul_razm
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .li_razm
 {
     width: 374px;
@@ -516,7 +533,6 @@ padding: 116px 42px 32px 45px;
     font-weight: 400;
 font-size: 16px;
 line-height: 16px;
-
 color: #999999;
 }
 .razm_price
@@ -541,7 +557,7 @@ margin-bottom: 16px;
 }
 .razm_text2
 {
-margin-bottom: 26px;
+margin-bottom: 20px;
 }
 .star
 {
@@ -576,23 +592,29 @@ margin-bottom: 26px;
 {
     width: 1170px;
     margin: auto;
-    padding: 35px 0;
+    padding: 40px 45px 70px;
     max-width: 100%;
     background: #E9E9E9;
 border-radius: 15px;
+margin-left: 45px;
 }
-.xochy_tyr_block
+.tyr_h2
 {
-    margin-left: 45px;
-    max-width: 1080px;
-    min-height: 106px;
+margin-left: 0px;
 }
 .forma {
     display: flex;
     flex-direction: row;
-padding: 28px 32px;
-background-color: blue;
+    justify-content: space-around;
+    align-items: center;
+padding: 28px;
+background-color: coral;
 border-radius: 15px;
+}
+.forma div:not(:first-child)
+{
+    height: 50px;
+    border-left: 1px solid #E9E9E9;
 }
 .forma_zag_text
 {
@@ -612,13 +634,20 @@ line-height: 16px;
 color: #000000;
 }
 select{
-    border:0px;
-    outline:0px;
+    width: 169px;
+    height: 25px;
+    border: none;
+    -webkit-appearance: none;
     appearance: none;
-  overflow: hidden;
   background: url('../Layot/img/Черная_стрелка.png');
+  background-position: calc(100% - .313rem) .625rem;
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: .85em auto;
+ }
+ .forma div [type=number]
+ {
+    border: none;
+    border-bottom: 1px solid #ccc;
  }
  .forma_block
  {
@@ -627,19 +656,19 @@ select{
 min-height: 43px;
 margin-right: 41px;
  }
- .label_select
- {
-background-color: crimson;
- }
  input
  {
         border:0px;
         outline:0px;
  }
- .label_date
- {
+.forma_btn
+{
+    width: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
- }
 .kontact
 {
     display: flex;
@@ -852,6 +881,7 @@ top: 5620px;
  .iconka
  {
     fill:#999999;
+    transition: 1s linear;
  }
  .iconka:focus
  {
