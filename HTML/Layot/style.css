@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Muller";
-    src: url("MullerRegular.woff2"), url("../Layot/MullerRegular.woff");
+    src: url("MullerRegular.woff2"), url("MullerRegular.woff");
    }
 .container_mod {
     margin: auto;
@@ -27,7 +27,15 @@ body {
 a {
     text-decoration: none;
 }
-
+.zag {
+    margin: 0px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 40px;
+}
 .cont_logo {
     display: flex;
     align-items: center;
@@ -297,16 +305,6 @@ margin-bottom: 47px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.zag {
-    margin: 0px;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    color: #333333;
-    padding-left: 40px;
 }
 
 .O_nas_text {
@@ -582,49 +580,52 @@ margin-bottom: 20px;
     font-size: 20px;
     line-height: 40px;
     color: #FFFFFF;
-    padding-right: 15px;
-    background-image: url("../Layot/img/Rectangle\ 4.png");
-    background-position: right;
-    background-repeat: no-repeat;
+    stroke: #FFFFFF;
     margin-bottom: 27px;
 }
-.container_blog
+.razm_svg
 {
-    width: 1170px;
-    margin: auto;
-    padding: 40px 45px 70px;
-    max-width: 100%;
+    transition: 0.3s ease;
+}
+.li_razm_vse_var:focus svg
+{
+    transform: translateX(0.8em);
+}
+.li_razm_vse_var:hover svg
+{
+    transform: translateX(0.8em);
+}
+.tyr
+{
     background: #E9E9E9;
-border-radius: 15px;
-margin-left: 45px;
+    border-radius: 15px;
+    margin-top: 35px;
+    
 }
 .tyr_h2
 {
-margin-left: 0px;
+   margin-left: 0px;
+   margin-top: 10px;
 }
 .forma {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-padding: 28px;
-background-color: coral;
+    max-width: 1080px;
+    min-height: 106px;
+    background-color: #FFFFFF;
 border-radius: 15px;
-}
-.forma div:not(:first-child)
-{
-    height: 50px;
-    border-left: 1px solid #E9E9E9;
+margin-left: 45px;
+margin-bottom: 15px;
 }
 .forma_zag_text
 {
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    margin-bottom: 15px;
     margin-top: 0px;
+    margin-bottom: 10px;
 color: #000000;
-background-color: aqua;
 }
 .select_block
 {
@@ -640,33 +641,61 @@ select{
     -webkit-appearance: none;
     appearance: none;
   background: url('../Layot/img/Черная_стрелка.png');
-  background-position: calc(100% - .313rem) .625rem;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: .85em auto;
+  background-size: 12px;
+
  }
  .forma div [type=number]
  {
     border: none;
     border-bottom: 1px solid #ccc;
  }
- .forma_block
+ .forma_block1
  {
-    position: relative;
-    background-color: blueviolet;
-min-height: 43px;
+    width: 169px;
+height: 43px;
+margin-left: 28px;
 margin-right: 41px;
+ }
+ .forma_block2
+ {
+    width: 169px;
+height: 43px;
+margin-right: 41px;
+ }
+.forma_block3
+{
+    width: 121px;
+    height: 43px;
+    border: none;
+    margin-right: 41px;
+}
+.forma_block4
+ {
+    width: 121px;
+    height: 45px;
+    margin-right: 43px;
+ }
+ .forma_block5  
+ {
+    width: 121px;
+    height: 45px;
+    margin-right: 51px;
  }
  input
  {
-        border:0px;
-        outline:0px;
+    width: 116px;
+    height: 25px;
+    border: none;
  }
 .forma_btn
 {
-    width: 129px;
+    width: 108px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 30px;
 }
 
 .kontact
@@ -783,11 +812,22 @@ margin-bottom: 25px;
     max-height: 341px;
     margin-bottom: 31px;
  }
+ .ul_last
+ {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 831px;
+ }
+ .li_last1
+ {
+    width: 302px;
+    margin-left: 45px;
+ }
  .last_block1
  {
-    padding: 0px 45px;
-    max-width: 302px;
-min-height: 60px;
 font-weight: 400;
 font-size: 16px;
 line-height: 190%;
@@ -796,13 +836,11 @@ margin-bottom: 37px;
  }
  .last_block2
  {
-    max-width: 302px;
 min-height: 90px;
 font-weight: 400;
 font-size: 16px;
 line-height: 190%;
 color: #FFFFFF;
-padding: 0px 45px;
  }
  .last_block3
  {
@@ -810,78 +848,45 @@ padding: 0px 45px;
 font-size: 16px;
 line-height: 150%;
 color: #CC9933;
-padding: 0px 45px;
-max-width: 237px;
 min-height: 24px;
+ }
+ .li_last2
+ {
+    margin-left: 125px;
  }
  .last_block4
  {
-    position: absolute;
-left: 532px;
-top: 5607px;
     width: 359px;
+height: 30px;
+margin-bottom: 15px;
 font-weight: 400;
 font-size: 16px;
 line-height: 30px;
 color: #FFFFFF;
-
- }
- .last_block5
- {
-    position: absolute;
-    width: 138px;
-    left: 532px;
-top: 5668px;
-
  }
  .last_block6
  {
-    position: absolute;
-    width: 143px;
-    left: 532px;
-top: 5692px;
-
- }
- .last_block7
- {
-    position: absolute;
-    width: 120px;
-    left: 532px;
-top: 5733px;
-
- }
- .last_block8
- {
-    position: absolute;
-    width: 128px;
-    left: 532px;
-top: 5757px;
+    margin-bottom: 15px;
  }
  .last_pich_sun
  {
-    position: absolute;
-    left: 800px;
-top: 5655px;
-    
+  background-image: url("../Layot/img/Frame\ 11.png");
+  background-repeat: no-repeat;
  }
  .iconki
  {
     display: flex;
 flex-direction: column;
-align-items: flex-start;
 padding: 0px;
 gap: 20px;
+width: 25px;
+height: 115px;
 
-position: absolute;
-max-width: 25px;
-min-height: 115px;
-left: 1160px;
-top: 5620px;
  }
  .iconka
  {
     fill:#999999;
-    transition: 1s linear;
+    transition: 0.4s linear;
  }
  .iconka:focus
  {
