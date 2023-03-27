@@ -423,7 +423,7 @@ body {font-family: 'Muller', sans-serif;margin: 0;padding: 0;background-color: #
 .hotels-item-all {font-weight: 500;font-size: 20px;line-height: 40px;color: #FFFFFF;padding-right: 15px;background-image: url(../img/logo-hotels-more.png);background-position: right;background-repeat: no-repeat;margin-bottom: 27px;}
 
 services title about
-color: var(color)
+color: var(color)x
 stroke 
 position: absolute;
 right 0

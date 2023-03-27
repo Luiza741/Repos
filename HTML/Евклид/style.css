@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/HTML/Евклид/Шрифты/Montserrat-Italic-VariableFont_wght.ttf"), url("/HTML/Евклид/Шрифты/Montserrat-VariableFont_wght.ttf");
+   }
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1920px;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.container {
+    width: 1770px;
+    margin: auto;
+    
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    padding: 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #CC9933;
+    
+}
+.btn:focus:focus-visible
+{
+    background-color: #CC9933;
+    color: #FFFFFF;
+    outline: 1px solid #CC9933;
+}
+ .btn:hover {
+    background-color: #CC9933;
+    color: #FFFFFF;
+ }
+ .btn:active {
+    background-color: #A47312;
+    color: #FFFFFF;  
+ }
+.title {
+    margin: 0px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 40px;
+}
+.container_header
+{
+    display: flex;
+    flex-direction: row;
+max-height: 100px;
+background: #FFFFFF;
+box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 32px 32px;
+}
+.header_logo
+{
+    margin-left: 75px;
+}
+.header_content {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0px 45px;
+}
+
+.header_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    list-style-type: none;
+    margin-right: auto;
+    padding: 0px;
+    gap: 85px;
+}
+
+.list_item {
+
+}
+.item_link__title
+{
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+.header_search
+{
+    display: flex;
+    align-items: center;
+}
+.pich
+{
+    background-image: url("../Евклид/img/low-angle-photo-of-balconies-2462015\ 1.png");
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    width: 1770px;
+height: 620px;
+}
