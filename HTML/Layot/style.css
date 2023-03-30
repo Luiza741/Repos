@@ -13,7 +13,7 @@ img
     min-width: 320px;
 }
 
-body {
+body {  
     font-family: 'Muller';
     margin: 0;
     padding: 0;
@@ -138,6 +138,7 @@ color: #A47312;
 .header_down {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 0px 45px;
@@ -146,6 +147,7 @@ color: #A47312;
 .header_down_list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 45px;
     margin: 0px;
     list-style-type: none;
@@ -835,17 +837,18 @@ margin-bottom: 25px;
  {
  width: 1170px;
     margin: auto;
-    padding: 35px 0;
+    padding-top: 35px;
     background: #333333;
     border-radius: 15px;
     max-width: 100%;
-    min-height: 341px;
     margin-bottom: 31px;
  }
  .cont_footer_content
  {
-    position: relative;
-
+    background-image: url("../Layot/img/big_sun.png");
+    background-repeat: no-repeat;
+    background-position: 700px 65px;
+    background-size: 225px;
  }
  .footer_list
  {
@@ -859,6 +862,7 @@ margin-bottom: 25px;
  {
     width: 302px;
     margin-left: 45px;
+    padding-bottom: 35px;
  }
  .footer_item__content1
  {

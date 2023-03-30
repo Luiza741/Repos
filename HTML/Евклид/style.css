@@ -1,26 +1,39 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/HTML/Евклид/Шрифты/Montserrat-Italic-VariableFont_wght.ttf"), url("/HTML/Евклид/Шрифты/Montserrat-VariableFont_wght.ttf");
+    src: url("Montserrat-Black.ttf"), url("Montserrat-BlackItalic.ttf"), url("Montserrat-Italic-VariableFont_wght.ttf"), url("Montserrat-Bold.ttf"), url("Montserrat-ExtraBold.ttf"), url("Montserrat-ExtraBoldItalic.ttf"), url("Montserrat-ExtraLight.ttf"), url("Montserrat-ExtraLightItalic.ttf"), url("Montserrat-Italic.ttf"), url("Montserrat-Light.ttf"), url("Montserrat-LightItalic.ttf"), url("Montserrat-Medium.ttf"), url("Montserrat-MediumItalic.ttf"), url("Montserrat-Regular.ttf"), url("Montserrat-SemiBold.ttf"), url("Montserrat-SemiBoldItalic.ttf"), url("Montserrat-Thin.ttf"), url("Montserrat-ThinItalic.ttf");
    }
 
 body {
+    font-family: 'Montserrat', serif;
     margin: 0 auto;
     min-width: 320px;
     max-width: 1920px;
     padding: 0;
     font-style: normal;
-    font-family: 'Montserrat', sans-serif;
     background-color: #E5E5E5;
 }
-
+main
+{
+    max-width: 1770px;
+}
+footer
+{
+    max-width: 1920px;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 .container {
     width: 1770px;
     margin: auto;
-    
     max-width: 100%;
+    background: #E5E5E5;
+    padding: 75px 0px;
 }
-
 a {
     text-decoration: none;
 }
@@ -57,60 +70,143 @@ a {
     margin-bottom: 20px;
     font-weight: 400;
     color: #333333;
-    padding-left: 40px;
+    padding-left: 75px;
+}
+header
+{
+    width: 100%;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 32px 32px;
 }
 .container_header
 {
     display: flex;
-    flex-direction: row;
-max-height: 100px;
-background: #FFFFFF;
-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-border-radius: 0px 0px 32px 32px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 .header_logo
 {
     margin-left: 75px;
+    margin-right: 553px;
 }
 .header_content {
     display: flex;
     align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 0px 45px;
 }
-
 .header_list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0px;
-    list-style-type: none;
-    margin-right: auto;
-    padding: 0px;
-    gap: 85px;
+    align-items: center ;
 }
 
-.list_item {
-
+.list_item:not(:last-child) {
+    margin-right: 85px;
+}
+.list_item:last-child
+{
+    margin-right: 260px;
 }
 .item_link__title
 {
     font-weight: 600;
 font-size: 18px;
 line-height: 22px;
-color: #000000;
+color: var(--black-color);
 }
 .header_search
 {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 70px;
+}
+.project
+{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 620px;
+    word-break: break-word;
+    margin-left: 75px;
+}
+.project_article
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 620px;
+    max-width: 1770px;
+    padding-left: 80px;
+
+}
+.project__title
+{
+max-width: 837px;
+font-weight: 800;
+font-size: 70px;
+line-height: 85px;
+color: #FFFFFF;
+margin-bottom: 24px;
+}
+.project__text
+{
+max-width: 790px;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #FFFFFF;
+margin-bottom: 90px;
+}
+.project__btn
+{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 18.571px 37.1419px;
+max-width: 280px;
+min-height: 78px;
+background: #FF9900;
+border-radius: 16px;
+}
+.pr_btn__text
+{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .pich
 {
     background-image: url("../Евклид/img/low-angle-photo-of-balconies-2462015\ 1.png");
     background-repeat: no-repeat;
     border-radius: 32px;
-    width: 1770px;
-height: 620px;
 }
+.about_us
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 943px;
+    word-break: break-word;
+    margin-left: 75px;
+}
+.about_us_text
+{
+    max-width: 1235px;
+    min-height: 192px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+.about_us_block
+{
+
+}
+.
