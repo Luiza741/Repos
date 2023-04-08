@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class=" container container_header">
+        <div class="container container_header">
             <a href="" class="header_logo">
                 <img src="img/Logo.svg">
             </a>
@@ -17,16 +17,17 @@
                 <button class="header_content__btn">
                     <span class="btn_p"></span>
                 </button>
-                <ul class="header_list">
-                    <li class="list_item"><a href="#" class="item_link__title">О нас</a></li>
-                    <li class="list_item"><a href="#" class="item_link__title">Проекты</a></li>
-                    <li class="list_item"><a href="#" class="item_link__title">Этапы</a></li>
-                    <li class="list_item"><a href="#" class="item_link__title">Отзывы</a></li>
-                    <li class="list_item"><a href="#" class="item_link__title">Контакты</a></li>
+                <nav class="header_nav">
+                <ul class="header_nav__list">
+                    <li class="nav_list__item"><a href="#" class="nav_link__title">О нас</a></li>
+                    <li class="nav_list__item"><a href="#" class="nav_link__title">Проекты</a></li>
+                    <li class="nav_list__item"><a href="#" class="nav_link__title">Этапы</a></li>
+                    <li class="nav_list__item"><a href="#" class="nav_link__title">Отзывы</a></li>
+                    <li class="nav_list__item"><a href="#" class="nav_link__title">Контакты</a></li>
                 </ul>                  
             <button class="header_search">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"/>
+            <svg class="header_search__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
                 <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke-width="2"/>
                 </svg> 
             </button>
@@ -34,14 +35,13 @@
         </div>
     </header>
     <main class="container">
-        <section class="container_project">
-        <div class="project pich">
-        <div class="project_content">
+        <section class="project">
+        <div class="project_content project_pich">
                 <h2 class="project__title">Проектные решения любой сложности</h2>
-                <p class="project__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                <div class="project__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</div>
                 <button class="project__btn pr_btn__text">Заказать расчёт</button>
         </div>
-        </div>
+        </section>
         <section class="container">
             <h2 class="title">О нас</h2>
             <div class="about_us">
@@ -54,7 +54,7 @@
                     прототип будущего проекта способствует повышению качества экспериментов.
                 </div>
                 <div class="about_us_block">
-                    <article class="about_article ">
+                    <article class="about_article">
                             <div class="about_article__text">Принимая во внимание показатели успешности, 
                                 перспективное планирование способствует подготовке и реализации новых принципов
                             </div>

@@ -12,15 +12,21 @@
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style2.css">
+    <script src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header js-header">
-        <h1 class="sr-only">Евклид. Проектные системы</h1>
-        <div class="container header__wrapper"> <a href="#" class="header__logo-link"> <img class="header-logo lazy"
-                    data-src="img/logos/logo_1.png" src="#" alt="Главная страница. Евклид. Проектные системы"> </a>
-            <nav class="header__nav"> <button class="header-nav__burger js-burger"
-                    title="Открыть меню навигации по сайту"><span class="burger"></span></button>
+        <div class="container header__wrapper"> <a href="#" class="header__logo-link">
+                <img class="header-logo lazy" data-src="img/logos/logo_1.png" src="#"> </a>
+            <nav class="header__nav">
+                <button class="header-nav__burger js-burger" title="Открыть меню навигации по сайту">
+                    <span class="burger"></span>
+                </button>
                 <ul class="header-nav__list js-nav">
                     <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
                     <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
@@ -28,7 +34,8 @@
                     <li class="header-nav__item"><a class="header-nav__link" href="#">Отзывы</a></li>
                     <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
                 </ul>
-            </nav> <button class="header__search-btn" title="Поиск"></button>
+            </nav>
+            <button class="header__search-btn" title="Поиск"></button>
         </div>
     </header>
     <main class="main container">
@@ -313,7 +320,8 @@
     </main>
     <footer class="footer">
         <div class="container footer__wrapper">
-            <div class="footer__info"> <a href="#" class="footer__logo-link"><img class="footer__logo lazy"
+            <div class="footer__info"> 
+                <a href="#" class="footer__logo-link"><img class="footer__logo lazy"
                         data-src="img/logos/logo_2.png" src="#" alt="Главная страница. Евклид. Проектные системы"></a>
                 <nav class="footer__nav footer-nav">
                     <ul class="footer-nav__list">
@@ -358,18 +366,20 @@
                 </ul>
             </div>
             <form class="footer__form" action="#" method="GET">
-                <h2 class="title footer-form__title">Оставить заявку</h2> <label for="client-name"
-                    class="sr-only">Фамилия, имя и отчество</label> <input id="client-name" class="footer-form__input"
-                    type="text" name="client-name" placeholder="Фамилия, имя и отчество*" required> <label
-                    for="client-mail" class="sr-only">E-mail</label> <input id="client-mail" class="footer-form__input"
-                    type="email" name="client-mail" placeholder="E-mail*" required> <label for="client-msg"
-                    class="sr-only">Сообщение</label> <textarea id="client-msg" class="footer-form__area"
-                    name="client-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                <div class="footer-form__bottom"> <input class="footer-form__submit" type="submit"
+                <h2 class="title footer-form__title">Оставить заявку</h2> 
+                <label for="client-name" class="sr-only">Фамилия, имя и отчество</label>
+                <input id="client-name" class="footer-form__input" type="text" name="client-name" placeholder="Фамилия, имя и отчество*" required>
+                <label for="client-mail" class="sr-only">E-mail</label>
+                <input id="client-mail" class="footer-form__input" type="email" name="client-mail" placeholder="E-mail*" required> 
+                    <label for="client-msg" class="sr-only">Сообщение</label> 
+                    <textarea id="client-msg" class="footer-form__area" name="client-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <div class="footer-form__bottom"> 
+                    <input class="footer-form__submit" type="submit"
                         value="Отправить данные">
-                    <div class="footer-form__agree"> <input id="agree" class="footer-form__checkbox" type="checkbox"
-                            name="agree" required> <label class="footer-form__label footer-form__label_agree"
-                            for="agree"> Согласен на обработу данных </label> </div>
+                    <div class="footer-form__agree"> 
+                        <input id="agree" class="footer-form__checkbox" type="checkbox" name="agree" required> 
+                            <label class="footer-form__label footer-form__label_agree" for="agree"> Согласен на обработу данных </label> 
+                        </div>
                 </div>
             </form>
             <p class="footer__text"> Высокий уровень вовлечения представителей целевой аудитории является четким
