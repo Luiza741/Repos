@@ -1,30 +1,9 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("montserrat-extrabold-webfont.woff") format("woff"),
-        url("montserrat-extrabold-webfont.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-bold-webfont.woff") format("woff"), 
-        url("montserrat-bold-webfont.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-semibold-webfont.woff") format("woff"), 
-        url("montserrat-semibold-webfont.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-medium-webfont.woff") format("woff"), 
-        url("montserrat-medium-webfont.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-regular-webfont.woff") format("woff"),
-        url("montserrat-regular-webfont.woff2") format("woff2");
+    src: url("../Евклид/Montserrat-VariableFont_wght.ttf"), url("../Евклид/Montserrat-Italic-VariableFont_wght.ttf"), url("../Евклид/static/Montserrat-Black.ttf"), url("../Евклид/static/Montserrat-BlackItalic.ttf"), url("../Евклид/static/Montserrat-Bold.ttf"), url("../Евклид/static/Montserrat-BoldItalic.ttf"), url("../Евклид/static/Montserrat-ExtraBold.ttf"), url("../Евклид/static/Montserrat-ExtraBoldItalic.ttf"), url("../Евклид/static/Montserrat-ExtraLight.ttf"), url("../Евклид/static/Montserrat-ExtraLightItalic.ttf"), url("../Евклид/static/Montserrat-Italic.ttf"), url("../Евклид/static/Montserrat-Light.ttf"), url("../Евклид/static/Montserrat-LightItalic.ttf"), url("../Евклид/static/Montserrat-Medium.ttf"), url("../Евклид/static/Montserrat-Thin.ttf");
 }
 body {
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     min-width: 320px;
     max-width: 1920px;
@@ -84,12 +63,11 @@ a {
  }
 .title {
     margin: 0px;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
     font-weight: 400;
     color: #333333;
-    padding-left: 75px;
 }
 :root {
     --black-color: #000000;
@@ -137,19 +115,30 @@ border-radius: 0px 0px 32px 32px;
     border: none;
     transition: background-color .2s;
 }
-.header_list {
+.header_nav
+{
+    
+}
+.header_nav__navigate
+{
+    display: none;
+    padding: 0;
+    background-color: transparent;
+    border: none
+}
+.header_nav__list {
     display: flex;
     align-items: center ;
 }
 
-.list_item:not(:last-child) {
+.nav_list__item:not(:last-child) {
     margin-right: 85px;
 }
-.list_item:last-child
+.nav_list__item:last-child
 {
     margin-right: 260px;
 }
-.item_link__title
+.nav_link__title
 {
     font-weight: 600;
 font-size: 18px;
@@ -167,7 +156,6 @@ transition: box-shadow .2s;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    margin-right: 70px;
     stroke: black;
     fill: black;
 }
@@ -208,13 +196,13 @@ transition: box-shadow .2s;
 {
     height: 100%;
     overflow: hidden;
+    margin-bottom: 60px;
+    
 }
 .project_content
 {
-    max-width: 895px;
-    position: absolute;
-    z-index: 100;
-    padding: 100px 0 0 80px;
+    padding: 100px 80px;
+    max-width: 92%;
 }
 .project__title
 {
@@ -249,7 +237,7 @@ min-height: 78px;
 */
 background: var(--orange-color);
 border-radius: 16px;
-padding: 26px 42px;
+padding: 25px 39px;
 
 }
 .pr_btn__text
@@ -260,23 +248,24 @@ padding: 26px 42px;
     text-align: center;
     color: #FFFFFF;
 }
-.pich
+.project_pich
 {
     background-image: url("../Евклид/img/low-angle-photo-of-balconies-2462015\ 1.png");
     background-repeat: no-repeat;
     border-radius: 32px;
 }
+.about
+{
+    margin-bottom: 100px;
+}
 .about_us
 {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    max-width: 100%;
-    min-height: 943px;
-    word-break: break-word;
-    margin-left: 75px;
+    justify-content: space-between;
+    align-items: center;
 }
-.about_us_text
+.about__text
 {
     max-width: 1235px;
     min-height: 192px;
@@ -284,11 +273,302 @@ padding: 26px 42px;
     font-size: 16px;
     line-height: 32px;
     color: #000000;
+    word-break: break-word;
+    max-width: 70%;
+    margin-bottom: 40px;
 }
 .about_us_block
 {
+    display: flex;
+    align-items: flex-end;
+    max-width: 868px;
+    min-height: 622px;
+    background-image: url("../Евклид/img/Rectangle\ 2.png");
+    background-repeat: no-repeat;
+    /*
+    background-size: cover;
+    background-position: center center;*/
+}
+.about_content
+{
+    padding: 35px 67px 35px 50px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    
+}
+.about_block__text
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--white-color);
+    margin-right: auto;
+    max-width: 60%;
+}
+.about_us__btn
+{
+padding: 19px 38px;
+border: 3px solid #FF9900;
+border-radius: 16px;
+cursor: pointer;
+background-color: transparent;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+}
+.about_us__list
+{
+
+    max-width: 870px;
+}
+.about_item
+{
+    padding: 65px 115px 65px 300px;
+    border: 1px solid #CACACA;
+    border-radius: 32px;
+}
+.about_item:first-child {
+    margin-bottom: 32px;
+}
+.consul_ph
+{
+    background-image: url("../Евклид/img/Frame\ 16.svg");
+    background-position: left 55px top 58px;
+    background-repeat: no-repeat;
+}
+.aspirat_ph
+{
+    background-image: url("../Евклид/img/Frame\ 12.svg");
+    background-position: left 55px top 64px;
+    background-repeat: no-repeat;
+}
+.about_item__title
+{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0;
+}
+.about_item__text
+{
+max-width: 450px;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+color: #000000;
+margin: 0;
+}
+
+/*Как мы работаем*/
+
+.work
+{
+    margin-bottom: 111px;
+}
+.work_title
+{
+    margin-bottom: 50px;
+}
+.work_list__step
+{
+    display: flex;
+    margin-bottom: 40px;
+}
+.work_item__step:not(:last-child)
+{
+    margin-right: 89px;
+}
+.item_step__active
+{
+    color: #E1670E;
+}
+.step_link
+{
+    transition: color .2s;
+    font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
 
 }
+.step_link:focus-visible,
+.step_link:hover {
+    color: var(--orange-color);
+}
+
+.step_link:focus-visible {
+    outline: var(--orange-color) solid 2px;
+}
+
+.work_list
+{
+    display: flex;
+}
+.work_item
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease-in
+}
+.work_item__active
+{
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+.work_article
+{
+    display: flex;
+    align-items: flex-end;
+}
+.work_article__content
+{
+    margin-right: auto;
+}
+.work_article__title
+{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.work_article__text
+{
+    margin: 0px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    max-width: 758px;
+    margin-bottom: 10px;
+}
+.work_article__btn
+{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.work_btn
+{
+    padding: 19px 38px;
+    font-size: 16px;
+    border: 1px solid #333333;
+    transition: color .2s, background-color .2s;
+border-radius: 16px;
+}
+.work_btn:not(:last-child) {
+    margin-right: 31px;
+}
+
+.work_btn:focus-visible,
+.work_btn:hover {
+    color: #fff;
+    background-color: #333333;
+}
+
+.work_btn:focus-visible {
+    outline: var(--orange-color) solid 2px;
+}
+.btn_podrobnee
+{
+    color: #fff;
+    border-radius: 16px;
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+}
+.btn_podrobnee:focus-visible,
+.btn_podrobnee:hover {
+    background-color: transparent;
+    color: #333333;
+}
+.work_article__image
+{
+
+}
+
+/*Часто задаваемые вопросы*/
+.faq
+{
+    margin-bottom: 100px;
+}
+.faq_title
+{
+    margin-bottom: 32px;
+}
+.faq_list
+{
+    margin-top: 40px
+}
+.faq_item
+{
+    padding-left: 4px;
+    border-top: 1px solid var(--grey-color);
+}
+.faq_item:last-child {
+    border-bottom: 1px solid var(--grey-color);
+}
+.faq_btn
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 33px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    transition: color .2s
+}
+.faq_btn::after {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    background-image: url('../Евклид/img/+х.png');
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-position: center;
+    transition: transform .3s ease-in-out;
+}
+
+.faq_btn:focus-visible,
+.faq_btn:hover {
+    color: var(--orange-color);
+    outline: 0;
+}
+
+.faq_btn:focus-visible::after,
+.faq_btn:hover::after {
+    background-color: #d2d2d2;
+}
+.faq_btn__title
+{
+    font-size: 24px;
+    line-height: 32px;
+    transition: transform .3s ease-in-out;
+}
+.faq_text
+{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.faq_text p {
+    padding-bottom: 40px;
+}
+
+/*footer*/
+
 footer
 {
     margin-top: 100px;
